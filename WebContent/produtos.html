@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Exemplo Web</title>
+</head>
+<body bgcolor="black">
+<font color="purple"> 
+<div align="center">
+<h2>CADASTRO DE PRODUTOS</h2><br/>
+</div>
+ <div align="center">
+<input type="button" value="Novo"/>
+<input type="button" value="Alterar"/>
+<input type="button" value="Excluir"/>
+<input type="button" value="sair" onclick="history.go(-1)" />
+</div>
+<hr>
+<div align="center">
+	<form id="produto">
+	<br />
+		Descrição:<input type="text" name="descricao"/><br/><br/>
+		Fornecedor:<select name="servico">
+			<option value="Selecione um fornecedor">Selecione um fornecedor"</option>
+			<option value="fornecedor 1">fornecedor 1</option>
+			<option value="fornecedor 2">fornecedor 2</option>
+			</select> <br/><br/>
+			Valor Custo:<input type="number" name="valorCusto"/>
+			Valor Venda:<input type="number" name="valorVenda"/><br/><br/>
+			</div>
+			<hr>
+			<div align="center">
+			<input type="submit" value="Salvar Produto"  />
+			<input type="reset" value="Cancelar" />
+			</div>
+			<hr>
+			<div align="center">
+			<h4>Produtos Cadastrados</h4>
+			</div>
+			<hr>
+			<div align="center">
+			<table border="1">
+			<tr>
+			<th>Descrição</th>
+			<th>Fornecedor</th>
+			<th>Valor de custo</th>
+			<th>Valor de Venda</th>
+		</tr>
+		<tr>
+			<td>Teclado</td>
+			<td>Kalunga</td>
+			<td>10.0</td>
+			<td>100.0</td>
+		</tr>
+		<tr>
+			<td>Mouse</td>
+			<td>Extra</td>
+			<td>5.0</td>
+			<td>50.0</td>
+		</tr>
+				
+			</table>
+		</form>
+	</font>
+</div>
+
+
+
+</body>
+</html>

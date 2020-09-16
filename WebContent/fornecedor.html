@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Exemplo web</title>
+</head>
+<body bgcolor="black">
+	<font color="orange">
+		<div align="center">
+			<h2>CADASTRO DE FORNECEDORES</h2>
+			<br />
+		</div>
+
+		<div align="center">
+			<input type="button" value="Novo" />&nbsp &nbsp &nbsp &nbsp &nbsp
+			&nbsp <input type="button" value="Alterar" />&nbsp &nbsp &nbsp &nbsp
+			&nbsp &nbsp <input type="button" value="Excluir" />&nbsp &nbsp &nbsp
+			&nbsp &nbsp &nbsp <input type="button" value="sair"
+				onclick="history.go(-1)" />&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+		</div>
+		<hr>
+		<div align="center">
+			<form id="fornecedor">
+				<br /> CNPJ:<input type="text" size="20" name="cnpj" />&nbsp &nbsp
+				&nbsp &nbsp Inscrição Estadual:<input type="text" size="30"
+					name="ie" /><br />
+				<br /> Razão Social:<input type="text" size="35" name="razaoSocial" />
+				&nbsp &nbsp &nbsp Data de Fundação <input id="data" type="date"
+					size="20" name="dataFundacao" /><br />
+				<br /> Logradouro:&nbsp &nbsp<input type="text" size="35"
+					name="logradouro" /> Número:<input type="text" size="3"
+					name="numero" /> Complemento:<input type="text" size="5"
+					name="complemento" /> <br />
+				<br /> Bairro: <input type="text" size="35" name="bairro" /> Cidade:<select
+					name="Cidade">
+					<option value="Selecione uma Cidade">Selecione uma Cidade</option>
+					<br />
+				</select> UF:<select name="UF">
+					<option value="Selecione um uf">Selecione um UF</option>
+				</select><br />
+				<br /> CEP:<input type="text" size="20" name="cep" /> &nbsp &nbsp
+				Telefone:<input type="text" size="20" name="telefone" /> &nbsp &nbsp
+				Celular:<input type="text" size="20" name="celular" /> <br />
+				<br /> E-mail:<input type="text" size="40" name="email" /> Contato:<input
+					type="text" size="30" name="contato" />
+		</div>
+		<hr>
+		<div align="center">
+			<br /> <input type="submit" value="Salvar Produto" />&nbsp &nbsp
+			&nbsp &nbsp &nbsp &nbsp <input type="reset" value="Cancelar" /> <br />
+			<br />
+		</div>
+		<hr>
+		<div align="center">
+			<h4>Fornecedores Cadastrados</h4>
+		</div>
+		<hr>
+		<div align="center">
+			<table border="1">
+				<tr>
+					<th>Razao Social</th>
+					<th>Telefone</th>
+					<th>Contato</th>
+					<th>Cidade</th>
+				</tr>
+				<tr>
+					<td>Teclados sa</td>
+					<td>(11)9306-3644</td>
+					<td>Eduardo</td>
+					<td>Sao PAulo</td>
+				</tr>
+
+			</table>
+		</div>
+
+		</form>
+	</font>
+</body>
+</html>
