@@ -3,41 +3,44 @@
 <head>
 <meta charset="ISO-8859-1">
 <title>Exemplo Web</title>
+<link href="css/produtos.css" rel="stylesheet">
 </head>
-<body bgcolor="black">
-<font color="purple"> 
+<body>
+
 <div align="center">
 <h2>CADASTRO DE PRODUTOS</h2><br/>
 </div>
  <div align="center">
-<input type="button" value="Novo"/>
-<input type="button" value="Alterar"/>
-<input type="button" value="Excluir"/>
-<input type="button" value="sair" onclick="history.go(-1)" />
+
+<input type="button" value="Novo" class="botao"/>
+<input type="button" value="Alterar" class="botao"/>
+<input type="button" value="Excluir" class="botao"/>
+<input type="button" value="Sair" onclick="history.go(-1)" class="botao"/>
 </div>
-<hr>
+
 <div align="center">
 	<form id="produto">
 	<br />
-		Descrição:<input type="text" name="descricao"/><br/><br/>
-		Fornecedor:<select name="servico">
+		Descrição:&nbsp &nbsp<input type="text" name="descricao"/><br/><br/>
+		Fornecedor:&nbsp &nbsp<select name="servico">
 			<option value="Selecione um fornecedor">Selecione um fornecedor"</option>
 			<option value="fornecedor 1">fornecedor 1</option>
 			<option value="fornecedor 2">fornecedor 2</option>
 			</select> <br/><br/>
-			Valor Custo:<input type="number" name="valorCusto"/>
-			Valor Venda:<input type="number" name="valorVenda"/><br/><br/>
+			Valor Custo:&nbsp &nbsp<input type="number" name="valorCusto"/>
+			Valor Venda:&nbsp &nbsp<input type="number" name="valorVenda"/><br/><br/>
+			</form>
 			</div>
-			<hr>
+			
 			<div align="center">
-			<input type="submit" value="Salvar Produto"  />
-			<input type="reset" value="Cancelar" />
+			<input type="submit" value="Salvar Produto" class="botao"  />
+			<input type="reset" value="Cancelar" class="botao" />
 			</div>
-			<hr>
+			
 			<div align="center">
-			<h4>Produtos Cadastrados</h4>
+			<h4>PRODUTOS CADASTRADOS</h4>
 			</div>
-			<hr>
+			
 			<div align="center">
 			<table border="1">
 			<tr>
@@ -60,8 +63,8 @@
 		</tr>
 				
 			</table>
-		</form>
-	</font>
+		
+	
 </div>
 
 

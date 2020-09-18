@@ -3,74 +3,79 @@
 <head>
 <meta charset="ISO-8859-1">
 <title>Exemplo Web</title>
+<link href="css/cliente.css" rel="stylesheet">
 </head>
-<body  bgcolor="black" ">
-<font color="white">
+<body>
+
 	<div align="center">
-	<h2>CADASTRO DE CLIENTES</h2><br/>
+		<h2>CADASTRO DE CLIENTES</h2>
+		<br />
+	</div>
+
+	<div align="center">
+		<input type="button" value="Novo"  class="botao" />&nbsp &nbsp &nbsp &nbsp &nbsp
+		&nbsp <input type="button" value="Alterar"  class="botao"/>&nbsp &nbsp &nbsp &nbsp
+		&nbsp <input type="button" value="Excluir"  class="botao"/>&nbsp &nbsp &nbsp &nbsp
+		&nbsp <input type="button" value="Sair" onclick="history.go(-1)"  class="botao"/>
+		
+	</div>
+	<div align="center">
+		<form id="fornecedor">
+		<p>
+			Tipo Pessoa:&nbsp &nbsp <input type="radio" name="servico_radio" value="fisico" />Fisico
+			&nbsp &nbsp <input type="radio" name="servico_radio" value="juridico" />Juridico
+			&nbsp &nbsp &nbsp &nbsp CPF:&nbsp &nbsp<input type="text" size="10" name="cpf" />
+			&nbsp &nbsp RG:&nbsp &nbsp<input type="text" size="10" name="rg" /><br />
+			<br /> Nome:&nbsp &nbsp<input type="text" size="20" name="nome" /> &nbsp &nbsp
+			&nbsp Data de Nascimento:&nbsp &nbsp <input id="data" type="date" size="10"
+				name="dataNascimento" /><br />
+			<br /> Logradouro:&nbsp &nbsp<input type="text" size="35"
+				name="logradouro" /> Número:&nbsp &nbsp<input type="text" size="5"
+				name="numero" /> <br />
+			<br /> Complemento:&nbsp &nbsp<input type="text" size="5" name="complemento" />
+			Bairro:&nbsp &nbsp <input type="text" size="15" name="bairro" /> CEP:&nbsp &nbsp<input
+				type="text" size="10" name="cep" /><br />
+			<br /> Cidade:&nbsp &nbsp<select name="Cidade">
+				<option value="Selecione uma Cidade">Selecione uma Cidade</option>
+				<br />
+			</select> UF:&nbsp &nbsp<select name="UF">
+				<option value="Selecione um uf">Selecione um UF</option>
+			</select> Telefone:&nbsp &nbsp<input type="text" size="10" name="telefone" /> <br />
+			<br /> Celular:&nbsp &nbsp<input type="text" size="10" name="celular" /> E-mail:&nbsp &nbsp<input
+				type="text" size="40" name="email" />
+				</p>
+		</form>
 	</div>
 	
 	<div align="center">
-	<input type="button" value="Novo" />&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
-	<input type="button" value="Alterar" />&nbsp &nbsp &nbsp &nbsp &nbsp
-	<input type="button" value="Excluir" />&nbsp &nbsp &nbsp &nbsp &nbsp
-	<input type="button" value="sair" onclick="history.go(-1)" />
-	<hr>
-	</div>
-	<div align="center">
-	<form id="fornecedor">
-	Tipo Pessoa: <input type="radio" name="servico_radio" value="fisico"/>Fisico  &nbsp &nbsp
-	<input type="radio" name="servico_radio" value="juridico"/>Juridico  &nbsp &nbsp &nbsp &nbsp
-	
-	CPF:<input type="text" size="10" name="cpf"/> &nbsp &nbsp
-	RG:<input type="text" size="10" name="rg"/><br/><br/>
-	Nome:<input type="text" size="20" name="nome"/>  &nbsp &nbsp &nbsp 
-	Data de Nascimento <input id="data" type="date" size="10" name="dataNascimento"/><br/><br/>
-	Logradouro:&nbsp &nbsp<input type="text" size="35" name="logradouro"/> 
-	Número:<input type="text" size="5" name="numero"/> <br/><br/>
-	Complemento:<input type="text" size="5" name="complemento"/> 
-	Bairro: <input type="text" size="15" name="bairro"/>
-	CEP:<input type="text" size="10" name="cep"/><br/><br/>
-	 Cidade:<select name="Cidade">
-	<option  value="Selecione uma Cidade">Selecione uma Cidade</option> <br/>
-	</select>
-	 UF:<select name="UF">
-	<option  value="Selecione um uf">Selecione um UF</option>
-	</select>
-	Telefone:<input type="text" size="10" name="telefone"/> <br/><br/>
-	Celular:<input type="text" size="10" name="celular"/> 
-	E-mail:<input type="text" size="40" name="email"/>
-	</div>
-	<hr>
-	<div align="center">
-	<br/>
-	<input type="submit" value="Salvar Produto"  />&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
-	<input type="reset" value="Cancelar" /> <br/><br/>		
-	</div>
-	<hr>
-	<div align="center">
-	<h4>Clientes Cadastrados</h4>
-	</div>
-	<hr>
-	<div align="center">
-	<table border="1">
-	<tr>
-	<th>Nome</th>
-	<th>Cidade</th>
-	<th>Celular</th>
-	<th>Email</th>
-	</tr>
-	<tr>
-	<td>Kleber Henrique</td>
-	<td>Sao Paulo</td>
-	<td>(11)98542-5222</td>
-	<td>giribidionson@email.com</td>
-	</tr>
-					
-	</table>
+		<br /> <input type="submit" value="Salvar Produto"  class="botao"/>&nbsp &nbsp
+		&nbsp &nbsp &nbsp &nbsp <input type="reset" value="Cancelar"  class="botao"/> <br />
+		<br />
 	</div>
 	
-	</font>
-	</form>
+	<div align="center">
+		<h4>CLIENTES CADASTRADOS</h4>
+	</div>
+	
+	<div align="center">
+		<table border="1">
+			<tr>
+				<th>Nome</th>
+				<th>Cidade</th>
+				<th>Celular</th>
+				<th>Email</th>
+			</tr>
+			<tr>
+				<td>Kleber Henrique</td>
+				<td>Sao Paulo</td>
+				<td>(11)98542-5222</td>
+				<td>giribidionson@email.com</td>
+			</tr>
+
+		</table>
+	</div>
+
+
+
 </body>
 </html>

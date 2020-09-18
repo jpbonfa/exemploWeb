@@ -1,0 +1,40 @@
+html {
+	
+}
+
+body {
+	font: italic 25px/24px arial;
+	background-image:url("../img/produtos.png");
+	 opacity: 1.0;
+	
+}
+
+.botao {
+	width: 150px;
+	height:30px;
+	color: black;
+   background-color: olive;   
+   font:    bold 14px/24px arial;
+}
+
+
+
+h2 {
+	color: black;
+	font: bold 26px/24px arial;
+}
+
+h4 {
+	color: black;
+	font: bold 20px/24px arial;
+}
+
+form {
+	color: black;
+}
+
+table {
+	color: purple;
+	font: bold 20px/24px arial;
+	background-color: black;
+}

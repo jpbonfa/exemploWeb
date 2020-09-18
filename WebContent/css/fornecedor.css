@@ -1,0 +1,35 @@
+html{
+	background-color: ;
+	 
+}
+body{
+	font: bold 20px/24px arial;
+	background-image:url("../img/fornecedores.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	 opacity: 1.0;
+}
+h2 {
+	color: #ff0000;
+	font: bold 25px/24px arial;
+	text-shadow: 2px 2px 1px black;
+}
+h4{
+	color: #ff0000;
+	font: bold 25px/24px arial;
+	text-shadow: 2px 2px 1px black;
+}
+form {
+	color: #ff0000;
+}
+table {
+	color: #ff0000;
+	font: bold 25px/24px arial;
+}
+.botao {
+	width: 150px;
+	height:30px;
+	color: black;
+   background-color: olive;   
+   font:    bold 14px/24px arial;
+}

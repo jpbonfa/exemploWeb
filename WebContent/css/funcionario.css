@@ -1,0 +1,36 @@
+html{
+	
+	 
+}
+body{
+	font: bold 18px/24px arial;
+	background-image:url("../img/funcionario.jpg");
+	 opacity: 1.0;
+}
+h2 {
+	color: black;
+	font: bold 25px/24px arial;
+	text-shadow: 2px 2px 1px white;
+}
+form {
+	color: black;
+}
+h4{
+	color: black;
+	font: bold 25px/24px arial;
+	text-shadow: 2px 2px 1px white;
+}
+
+table {
+	color: deeppink;
+	font: bold 18px/25px arial;
+	background-color: black;
+    
+}
+.botao {
+	width: 150px;
+	height:30px;
+	color: black;
+   background-color: olive;   
+   font:    bold 14px/24px arial;
+}
