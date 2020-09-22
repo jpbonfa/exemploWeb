@@ -4,6 +4,7 @@
 <meta charset="ISO-8859-1">
 <title>Exemplo Web</title>
 <link href="css/cliente.css" rel="stylesheet">
+<script type="text/javascript" src="js/mascara.js"></script>
 </head>
 <body>
 
@@ -24,24 +25,24 @@
 		<p>
 			Tipo Pessoa:&nbsp &nbsp <input type="radio" name="servico_radio" value="fisico" />Fisico
 			&nbsp &nbsp <input type="radio" name="servico_radio" value="juridico" />Juridico
-			&nbsp &nbsp &nbsp &nbsp CPF:&nbsp &nbsp<input type="text" size="10" name="cpf" />
-			&nbsp &nbsp RG:&nbsp &nbsp<input type="text" size="10" name="rg" /><br />
+			&nbsp &nbsp &nbsp &nbsp CPF:&nbsp &nbsp<input type="text" size="10 " name="cpf" onkeyup="masc_cpf(this)" />
+			&nbsp &nbsp RG:&nbsp &nbsp<input type="text" size="10" name="rg" onkeyup="masc_rg(this)" /><br />
 			<br /> Nome:&nbsp &nbsp<input type="text" size="20" name="nome" /> &nbsp &nbsp
 			&nbsp Data de Nascimento:&nbsp &nbsp <input id="data" type="date" size="10"
 				name="dataNascimento" /><br />
 			<br /> Logradouro:&nbsp &nbsp<input type="text" size="35"
 				name="logradouro" /> Número:&nbsp &nbsp<input type="text" size="5"
-				name="numero" /> <br />
+				name="numero" onkeyup="masc_numero(this)" /> <br />
 			<br /> Complemento:&nbsp &nbsp<input type="text" size="5" name="complemento" />
 			Bairro:&nbsp &nbsp <input type="text" size="15" name="bairro" /> CEP:&nbsp &nbsp<input
-				type="text" size="10" name="cep" /><br />
+				type="text" size="10" name="cep" onkeyup="masc_cep(this)"/><br />
 			<br /> Cidade:&nbsp &nbsp<select name="Cidade">
 				<option value="Selecione uma Cidade">Selecione uma Cidade</option>
 				<br />
 			</select> UF:&nbsp &nbsp<select name="UF">
 				<option value="Selecione um uf">Selecione um UF</option>
-			</select> Telefone:&nbsp &nbsp<input type="text" size="10" name="telefone" /> <br />
-			<br /> Celular:&nbsp &nbsp<input type="text" size="10" name="celular" /> E-mail:&nbsp &nbsp<input
+			</select> Telefone:&nbsp &nbsp<input type="text" size="10" name="telefone" onkeyup="masc_telefone(this)"/> <br />
+			<br /> Celular:&nbsp &nbsp<input type="text" size="13" name="celular" onkeyup="masc_celular(this)" /> E-mail:&nbsp &nbsp<input
 				type="text" size="40" name="email" />
 				</p>
 		</form>

@@ -4,68 +4,71 @@
 <meta charset="ISO-8859-1">
 <title>Exemplo Web</title>
 <link href="css/produtos.css" rel="stylesheet">
+<script type="text/javascript" src="js/mascara.js"></script>
 </head>
 <body>
 
-<div align="center">
-<h2>CADASTRO DE PRODUTOS</h2><br/>
-</div>
- <div align="center">
+	<div align="center">
+		<h2>CADASTRO DE PRODUTOS</h2>
+		<br />
+	</div>
+	<div align="center">
 
-<input type="button" value="Novo" class="botao"/>
-<input type="button" value="Alterar" class="botao"/>
-<input type="button" value="Excluir" class="botao"/>
-<input type="button" value="Sair" onclick="history.go(-1)" class="botao"/>
-</div>
+		<input type="button" value="Novo" class="botao" /> <input
+			type="button" value="Alterar" class="botao" /> <input type="button"
+			value="Excluir" class="botao" /> <input type="button" value="Sair"
+			onclick="history.go(-1)" class="botao" />
+	</div>
 
-<div align="center">
-	<form id="produto">
-	<br />
-		Descrição:&nbsp &nbsp<input type="text" name="descricao"/><br/><br/>
-		Fornecedor:&nbsp &nbsp<select name="servico">
-			<option value="Selecione um fornecedor">Selecione um fornecedor"</option>
-			<option value="fornecedor 1">fornecedor 1</option>
-			<option value="fornecedor 2">fornecedor 2</option>
-			</select> <br/><br/>
-			Valor Custo:&nbsp &nbsp<input type="number" name="valorCusto"/>
-			Valor Venda:&nbsp &nbsp<input type="number" name="valorVenda"/><br/><br/>
-			</form>
-			</div>
-			
-			<div align="center">
-			<input type="submit" value="Salvar Produto" class="botao"  />
-			<input type="reset" value="Cancelar" class="botao" />
-			</div>
-			
-			<div align="center">
-			<h4>PRODUTOS CADASTRADOS</h4>
-			</div>
-			
-			<div align="center">
-			<table border="1">
-			<tr>
-			<th>Descrição</th>
-			<th>Fornecedor</th>
-			<th>Valor de custo</th>
-			<th>Valor de Venda</th>
-		</tr>
-		<tr>
-			<td>Teclado</td>
-			<td>Kalunga</td>
-			<td>10.0</td>
-			<td>100.0</td>
-		</tr>
-		<tr>
-			<td>Mouse</td>
-			<td>Extra</td>
-			<td>5.0</td>
-			<td>50.0</td>
-		</tr>
-				
-			</table>
+	<div align="center">
+		<form id="produto">
+			<br /> Descrição:&nbsp &nbsp<input type="text" name="descricao" /><br />
+			<br /> Fornecedor:&nbsp &nbsp<select name="servico">
+				<option value="Selecione um fornecedor">Selecione um
+					fornecedor"</option>
+				<option value="fornecedor 1">fornecedor 1</option>
+				<option value="fornecedor 2">fornecedor 2</option>
+			</select> <br />
+			<br /> Valor Custo:&nbsp &nbsp<input type="text" name="valorCusto" value="R$ 0,00" onkeyup="masc_moeda(this)"/>
+			Valor Venda:&nbsp &nbsp<input type="text" name="valorVenda" value="R$ 0,00" onkeyup="masc_moeda(this)"/><br />
+			<br />
 		
-	
-</div>
+	</div>
+
+	<div align="center">
+		<input type="submit" value="Salvar Produto" class="botao" /> <input
+			type="reset" value="Cancelar" class="botao" />
+	</div>
+</form>
+	<div align="center">
+		<h4>PRODUTOS CADASTRADOS</h4>
+	</div>
+
+	<div align="center">
+		<table border="1">
+			<tr>
+				<th>Descrição</th>
+				<th>Fornecedor</th>
+				<th>Valor de custo</th>
+				<th>Valor de Venda</th>
+			</tr>
+			<tr>
+				<td>Teclado</td>
+				<td>Kalunga</td>
+				<td>10.0</td>
+				<td>100.0</td>
+			</tr>
+			<tr>
+				<td>Mouse</td>
+				<td>Extra</td>
+				<td>5.0</td>
+				<td>50.0</td>
+			</tr>
+
+		</table>
+
+
+	</div>
 
 
 

@@ -4,6 +4,7 @@
 <meta charset="ISO-8859-1">
 <title>Exemplo Web</title>
 <link href="css/funcionario.css" rel="stylesheet">
+<script type="text/javascript" src="js/mascara.js"></script>
 </head>
 <body >
 
@@ -21,12 +22,12 @@
 <div align="center">
 		<form id="fornecedor">
 <br />
-		CPF:&nbsp &nbsp <input type="text" size="20" name="cpf"/>&nbsp &nbsp &nbsp &nbsp  
-		RG:&nbsp &nbsp <input type="text" size="30" name="rg"/><br/><br/>
+		CPF:&nbsp &nbsp <input type="text" size="20" name="cpf"  onkeyup="masc_cpf(this)"/>&nbsp &nbsp &nbsp &nbsp  
+		RG:&nbsp &nbsp <input type="text" size="30" name="rg" onkeyup="masc_rg(this)"/><br/><br/>
 		Nome:&nbsp &nbsp<input type="text" size="35" name="nome"/>  &nbsp &nbsp &nbsp 
 		Data de Nascimento:&nbsp &nbsp <input id="data" type="date" size="20" name="dataNascimento"/><br/><br/>
 		Logradouro:&nbsp &nbsp<input type="text" size="35" name="logradouro"/> 
-		Número:&nbsp &nbsp<input type="text" size="3" name="numero"/> 
+		Número:&nbsp &nbsp<input type="text" size="3" name="numero" onkeyup="masc_numero(this)"/> 
 		Complemento:&nbsp &nbsp<input type="text" size="5" name="complemento"/> <br/><br/>
 		 Bairro:&nbsp &nbsp <input type="text" size="35" name="bairro"/> 
 		 Cidade:&nbsp &nbsp<select name="Cidade">
@@ -35,9 +36,9 @@
 		 UF:&nbsp &nbsp<select name="UF">
 		<option  value="Selecione um uf">Selecione um UF</option>
 		</select><br/><br/>
-		CEP:&nbsp &nbsp<input type="text" size="20" name="cep"/> &nbsp &nbsp 
-		Telefone:&nbsp &nbsp<input type="text" size="20" name="telefone"/> &nbsp &nbsp
-		Celular:&nbsp &nbsp<input type="text" size="20" name="celular"/> <br/><br/>
+		CEP:&nbsp &nbsp<input type="text" size="20" name="cep"onkeyup="masc_cep(this)"/> &nbsp &nbsp 
+		Telefone:&nbsp &nbsp<input type="text" size="20" name="telefone"onkeyup="masc_telefone(this)"/> &nbsp &nbsp
+		Celular:&nbsp &nbsp<input type="text" size="20" name="celular" onkeyup="masc_celular(this)"/> <br/><br/>
 		E-mail:&nbsp &nbsp<input type="text" size="30" name="email"/>
 		Login:&nbsp &nbsp<input type="text" size="20" name="login" />
 		Senha:&nbsp &nbsp<input type="password" name="password">

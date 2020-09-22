@@ -4,6 +4,7 @@
 <meta charset="ISO-8859-1">
 <title>Exemplo web</title>
 <link href="css/fornecedor.css" rel="stylesheet">
+<script type="text/javascript" src="js/mascara.js"></script>
 </head>
 <body>
 
@@ -22,13 +23,13 @@
 	
 	<div align="center">
 		<form id="fornecedor">
-			<br /> CNPJ:&nbsp &nbsp<input type="text" size="20" name="cnpj" />&nbsp &nbsp
-			&nbsp &nbsp Inscrição Estadual:&nbsp &nbsp<input type="text" size="30" name="ie" /><br />
+			<br /> CNPJ:&nbsp &nbsp<input type="text" size="20" name="cnpj" onkeyup="masc_cnpj(this)"/>&nbsp &nbsp
+			&nbsp &nbsp Inscrição Estadual:&nbsp &nbsp<input type="text" size="30" name="ie" onkeyup="masc_ie(this)"/><br />
 			<br /> Razão Social:&nbsp &nbsp<input type="text" size="35" name="razaoSocial" />
 			&nbsp &nbsp &nbsp Data de Fundação:&nbsp &nbsp <input id="data" type="date"
 				size="20" name="dataFundacao" /><br /> <br /> Logradouro:&nbsp
 			&nbsp<input type="text" size="35" name="logradouro" /> Número:&nbsp &nbsp<input
-				type="text" size="3" name="numero" /> Complemento:&nbsp &nbsp<input
+				type="text" size="3" name="numero" onkeyup="masc_numero(this)" /> Complemento:&nbsp &nbsp<input
 				type="text" size="5" name="complemento" /> <br /> <br /> Bairro:&nbsp &nbsp
 			<input type="text" size="35" name="bairro" /> Cidade:&nbsp &nbsp<select
 				name="Cidade">
@@ -36,9 +37,9 @@
 				<br />
 			</select> UF:&nbsp &nbsp<select name="UF">
 				<option value="Selecione um uf">Selecione um UF</option>
-			</select><br /> <br /> CEP:&nbsp &nbsp<input type="text" size="20" name="cep" /> &nbsp
-			&nbsp Telefone:&nbsp &nbsp<input type="text" size="20" name="telefone" /> &nbsp
-			&nbsp Celular:&nbsp &nbsp<input type="text" size="20" name="celular" /> <br />
+			</select><br /> <br /> CEP:&nbsp &nbsp<input type="text" size="20" name="cep" onkeyup="masc_cep(this)" /> &nbsp
+			&nbsp Telefone:&nbsp &nbsp<input type="text" size="20" name="telefone" onkeyup="masc_telefone(this)"/> &nbsp
+			&nbsp Celular:&nbsp &nbsp<input type="text" size="20" name="celular" onkeyup="masc_celular(this)" /> <br />
 			<br /> E-mail:&nbsp &nbsp<input type="text" size="40" name="email" /> Contato:&nbsp &nbsp<input
 				type="text" size="30" name="contato" />
 		</form>
